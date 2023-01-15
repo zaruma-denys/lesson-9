@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+    width: 1920px;
+    height: 916px;
+    background-color: rgb(12, 151, 151);
+}
+.download{
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation-name: download;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes download{
+    50%{
+        border-radius: 50px;
+        transform: rotatez(180deg);
+        width: 50px;
+        height: 50px;
+    }
+    100%{
+    transform: rotatez(360deg);
+    }
+}

@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.spaceimg{
+    height: 100%;
+    width: 100%;
+}
+.earthimg{
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.circle {
+    width: 52px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    margin: auto;
+    animation-name: run;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration:5s;
+    transform: rotateZ(0deg) translate(159px) rotateY(0deg) rotateX(0deg);
+  }
+  
+  @keyframes run {
+    100% {
+      transform: rotateZ(360deg) translate(159px) rotateY(0deg) rotateX(0deg);
+    }
+  }
